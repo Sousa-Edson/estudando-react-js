@@ -7,7 +7,8 @@ function App() {
   const nome = "Maria"
   return (
     <div className='App'>
-      <h1>Estilo CSS</h1>
+      <h1>Testando CSS</h1>
+      <Frase/>
       <Frase/>
       <SayMyName nome="Edson" />
       <SayMyName nome="João" />
