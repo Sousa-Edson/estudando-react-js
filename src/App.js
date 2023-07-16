@@ -1,26 +1,12 @@
 import "./App.css";
-import Pessoa from "./components/Pessoa";
-import SayMyName from "./components/SayMyName";
-import Frase from "./components/Frase";
-import List from "./components/List";
-
+import OutraLista from "./components/OutraLista";
 function App() {
-  const nome = "Maria";
+  const meusItens = ["React", "Vue", "Angular"];
   return (
     <div className="App">
-      <h1>Testando CSS</h1>
-      <Frase />
-      <Frase />
-      <SayMyName nome="Edson" />
-      <SayMyName nome="João" />
-      <SayMyName nome={nome} />
-      <Pessoa
-        nome="Edson"
-        idade="28"
-        profissao="Programador"
-        foto="https://via.placeholder.com/150"
-      />
-      <List />
+      <h1>Renderização de listas</h1>
+      <OutraLista itens={meusItens} />
+      <OutraLista itens={[]} />
     </div>
   );
 }
